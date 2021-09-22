@@ -1,29 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <main-layout />
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+<script>
+import MainLayout from "./components/MainLayout.vue";
 
-export default Vue.extend({
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-});
+export default {
+  components: { MainLayout },
+};
 </script>
 
-<style lang="scss">
+<style>
+@import url("./assets/css/global.css");
+@import url("./assets/css/animate.css");
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: var(--appBackgroundColor);
 }
 </style>

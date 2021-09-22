@@ -1,0 +1,50 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	color: var(--textColor);
+	transition: 0.2s ease-in-out;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	background: var(--secondaryColor);
+	padding: 8px 20px;
+	border-radius: 20px;
+	outline: none;
+}
+button:active {
+	border-radius: 10px;
+}
+button:hover:not(.active_tab) {
+	background: var(--primaryColorLight);
+}
+body {
+	--appBackgroundColor: black;
+	--activeColor: #0db8c2;
+	--primaryColor: #171717;
+	--primaryColorLight: #202020;
+	--secondaryColor: #101010;
+	--textColor: white;
+	--textSmall: 0.9rem;
+	--textNormal: 1rem;
+	--textMedium: 1.1rem;
+	--textLarge: 1.2rem;
+}
+
+.panel {
+	border-radius: 10px;
+	background: var(--primaryColor);
+}
+.panel_header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 0px;
+	border-bottom: 2px solid var(--appBackgroundColor);
+}
+.panel_body {
+	padding: 10px;
+}
